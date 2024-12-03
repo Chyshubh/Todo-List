@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from 'react'
 import todo_icon from '../assets/todo_icon.png'
 import Todolist from './Todolist'
 
-const Todo = () => {
+const Todo = () =>{
   const[todoItem, settodoItem] =useState(localStorage.getItem('todos')? JSON.parse(localStorage.getItem('todos')):[]);
 
   const inputRef = useRef();
